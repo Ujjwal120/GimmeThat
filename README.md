@@ -1,18 +1,36 @@
 # GimmeThat
 
+For our case we are using pipenv as a package manager instead of Anaconda,
+the command below installs pipenv in your system for managing our venv :: 
+
+    pip install pipenv
+
+Now make a project directory ::
+
+    mkdir RecSys && cd RecSys && mkdir .venv
+
+Now we will initialise our virtual environment by selecting the Python version,
+that we will use, in my case Python version that i have used is Python 3.8.7 :: 
+
+    pipenv --python 3.8.7
+
+
 Install LensKit
 ---------------
 
-To install the current release with Anaconda (recommended)::
+use ``pipenv`` to install LensKit in our stock Python virtual environment,
+using our Pipfile to install all the dependencies ::
 
-    conda install -c conda-forge lenskit
+    pipenv install 
 
-You can also use ``pip`` to install LensKit in a stock Python environment,
-such as a virtual environment::
+now to make use of the virtual enviroment in Jupyter we activate our virtual 
+environment by ::
 
-    pip install lenskit
+    pipenv shell
 
-To use the latest development version, install directly from GitHub::
+and select the python path for the Jupyter Notebook from .venv folder of the directory
 
-    pip install git+https://github.com/lenskit/lkpy
 
+--------------
+BOOM TOASTED !
+--------------
