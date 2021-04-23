@@ -9,6 +9,7 @@ Now make a project directory ::
 
     mkdir RecSys && cd RecSys && pipenv install --dev
 
+
 Install LensKit
 ---------------
 
@@ -23,6 +24,7 @@ environment by ::
     pipenv shell
 
 and select the python path for the Jupyter Notebook from .venv folder of the directory
+
 
 
 --------------
