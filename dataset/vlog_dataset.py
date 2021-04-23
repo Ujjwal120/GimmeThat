@@ -3,10 +3,10 @@ import pandas as pd
 import numpy as np
 import csv
 
-N= 100
+N = 10000
 fake= Faker()
 
-categories = ["travel", "Skin Care", "Fashion"]
+categories = ["Travel", "Skin Care", "Fashion", "Health", "Movies", "Food"]
 prev_users= []
 
 
@@ -43,6 +43,10 @@ def create_data():
 		data[i]['vlog_id']= fake.random_int(1,N)
 		data[i]['tag']= categories[ fake.random_int(0,len(categories)-1 ) ]
 		data[i]['time_spent']= fake.random_int(0,30)
+		data[i]['like']= fake.random_int(0, 1)
+		data[i]['comment']= fake.random_int(0, 1)
+		data[i]['save']= fake.random_int(0, 1)
+
 
 	return data
 
@@ -51,7 +55,7 @@ def create_csv_file(dataset):
     with open('./vlog_dataset.csv', 'w', newline='') as csvfile:
 
         fieldnames = ['user_id', 'gender', 'age', 'country', 'vlog_id',
-                      'tag', 'time_spent']
+                      'tag', 'time_spent', 'like', 'comment', 'save']
 
         writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
         writer.writeheader()
