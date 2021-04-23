@@ -7,13 +7,7 @@ the command below installs pipenv in your system for managing our venv ::
 
 Now make a project directory ::
 
-    mkdir RecSys && cd RecSys && mkdir .venv
-
-Now we will initialise our virtual environment by selecting the Python version,
-that we will use, in my case Python version that i have used is Python 3.8.7 :: 
-
-    pipenv --python 3.8.7
-
+    mkdir RecSys && cd RecSys && pipenv install --dev
 
 Install LensKit
 ---------------
