@@ -3,7 +3,7 @@ import pandas as pd
 import numpy as np
 import csv
 
-N = 10000
+N = 100000
 fake= Faker()
 
 categories = ["Travel", "Skin Care", "Fashion", "Health", "Movies", "Food"]
@@ -19,7 +19,7 @@ class Person:
 
 
 def get_user():
-	if len(prev_users)>0 and np.random.randint(1,11) <= 3:	## 30% probability
+	if len(prev_users)>0 and np.random.randint(1,11) <= 5:	## 50% probability
 		return prev_users[ fake.random_int(0, len(prev_users)-1 ) ]
 	else:
 		gender= "MF"
