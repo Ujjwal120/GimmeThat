@@ -6,6 +6,7 @@ name = "pypi"
 [packages]
 faker = "*"
 lenskit = "*"
+tensorflow = "*"
 
 [dev-packages]
 jupyter = "*"

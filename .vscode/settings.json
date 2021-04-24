@@ -2,5 +2,5 @@
     "restructuredtext.confPath": "",
     "restructuredtext.languageServer.disabled": true,
     // "python.venvPath": "${workspaceFolder}/.venv/bin/python"
-    "python.pipenvPath": "C:\\Users\\negiu\\.virtualenvs\\RecSys-3IknWFq_\\Scripts\\python.exe"
+    // "python.pipenvPath": "C:\\Scripts\\python.exe"
 }
